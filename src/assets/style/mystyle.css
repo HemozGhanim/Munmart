@@ -1,0 +1,1897 @@
+/* main */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0px 0px;
+  margin: auto;
+  line-height: 1.3;
+}
+
+body {
+  font-family: "Barlow Condensed", sans-serif;
+  text-align: left;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+header {
+  width: 100%;
+}
+
+.FORnav {
+  width: 100%;
+}
+.form-control {
+  border: none;
+}
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  align-content: flex-start;
+  padding-top: 15px;
+  z-index: 100000;
+}
+
+.BrandLink {
+  font-size: 21px;
+  font-weight: 700;
+  color: #000;
+  transition: all 0.3s linear;
+}
+
+.BrandLink:hover {
+  color: #fe4330;
+}
+
+.BrandLink span {
+  color: #fe4330;
+}
+
+.navbar-nav {
+  display: flex;
+  display: -ms-flexbox;
+  justify-content: space-between;
+  margin-top: 20px;
+  align-items: center !important;
+  flex-direction: row !important;
+}
+
+.nav-item {
+  list-style: none;
+  margin: 0px 5px;
+}
+
+.nav-link {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #6d6d6d;
+  transition: all 0.6s ease;
+  border: 2px solid transparent;
+}
+
+.nav-link:hover {
+  color: #000;
+  font-weight: 700;
+  border-bottom: 2px solid #fe4330;
+}
+
+.dropdown-item {
+  text-align: left;
+}
+.dropdown-menu .show {
+  right: 0px;
+}
+.dropdown-toggle:after {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 0.255em;
+  vertical-align: 0px;
+  content: "\f150";
+  font-family: "Font Awesome 5 Free";
+  border: none;
+  color: #fe4330;
+  font-weight: 700;
+}
+.shopIcon:after {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 0.255em;
+  vertical-align: 0px;
+  content: "+";
+  border: none;
+  color: #fe4330;
+  font-weight: 700;
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+  color: #fff;
+  text-decoration: none;
+  background-color: #fe4330;
+}
+
+.dropdown-item:focus,
+.dropdown-item:hover {
+  background-color: rgba(254, 67, 48, 0.2196078431372549);
+}
+
+.searchAndChart {
+  width: auto;
+}
+
+.SANDClink1,
+.SANDClink2 {
+  margin: 0px 2px;
+  border: 1px solid #c7c7c7;
+  text-align: center;
+  font-size: 12px;
+  transition: all 0.3s linear;
+}
+
+.SANDClink1 {
+  color: #000;
+  padding: 11px 13px;
+  background-color: #fff;
+}
+
+.SANDClink2 {
+  color: #fff;
+  padding: 11px 14px 11px 13px;
+  background-color: #fe4330;
+  position: relative;
+}
+
+.SANDClink1:hover {
+  background-color: #fe4330;
+  color: #fff;
+}
+
+.SANDClink2 span {
+  position: absolute;
+  top: 0px;
+  right: 3px;
+  font-weight: 500;
+}
+
+.SANDClink2:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+/*start searchBar*/
+.allnav {
+  position: relative;
+}
+.forOverflow {
+  overflow: hidden !important;
+  transition-timing-function: linear;
+  position: absolute;
+  width: 100% !important;
+}
+.searchBarHeader {
+  width: 100% !important;
+  background-color: rgb(235, 235, 235);
+  padding: 10px 10px;
+}
+.contentSearchBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.inputSearchBar {
+  width: 70% !important;
+  font-size: 20px;
+}
+.butt-search {
+  margin-left: 10px;
+  font-size: 20px;
+  text-transform: capitalize;
+}
+/*end searchBar*/
+
+.Slider {
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+}
+
+.owl-carousel {
+  position: relative;
+  display: block !important;
+}
+
+.no-js .owl-carousel,
+.owl-carousel.owl-loaded {
+  position: relative;
+}
+.owl-carousel span {
+  display: block !important;
+}
+.owl-next,
+.owl-prev {
+  display: none !important;
+}
+.next,
+.prev {
+  font-size: 33px !important;
+  position: absolute;
+  top: 40%;
+  height: 51px;
+  cursor: pointer;
+  outline: none;
+  z-index: 10000;
+}
+
+.prev {
+  left: 5%;
+}
+.next {
+  right: 5%;
+}
+
+.next,
+.prev {
+  padding: 6px 15px 6px !important;
+  background-color: #fff !important;
+  transition: all 0.3s ease;
+  color: #000 !important;
+}
+
+.next:hover,
+.prev:hover {
+  color: #fff !important;
+  background-color: #fe4330 !important;
+}
+
+.contentofitem {
+  width: 26%;
+  position: absolute;
+  top: 30%;
+  left: 15%;
+  color: #fff;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  direction: rtl;
+  text-align: left;
+}
+
+.contentofitem > span {
+  letter-spacing: 2px;
+  font-weight: 400;
+  font-size: 31px;
+  width: 100%;
+}
+
+.contentofitem > h1 {
+  text-transform: uppercase;
+  font-size: 3.5rem;
+  width: 100%;
+}
+.BUTNS {
+  width: 100%;
+}
+
+.fa-shopping-cart {
+  margin-left: 5px;
+}
+.BUTNS > button {
+  background-color: transparent;
+  color: #ececec;
+  border: 1px solid rgba(255, 255, 255, 0.27058823529411763);
+  letter-spacing: 2px;
+  border-radius: 0px;
+  padding: 15px 26px;
+  margin-left: 10px;
+  text-transform: uppercase;
+}
+
+.BUTNS > button:hover {
+  background-color: #fe4330;
+  border: transparent;
+  color: #fff;
+}
+
+.owl-dots {
+  display: none;
+}
+
+.categories {
+  margin-bottom: 60px;
+}
+
+.categories > .container {
+  width: 70%;
+}
+
+.CofCategoris {
+  margin-top: 30px;
+  margin-bottom: 80px;
+  height: 100%;
+}
+
+.topDiv {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.BOXDIV {
+  width: 33.333333333333336%;
+  position: relative;
+}
+.BOXDIV a {
+  color: #000;
+}
+.BOXDIV span {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  background-color: #fff;
+  padding: 10px 10px;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: all 0.3s linear;
+}
+
+.BOXDIV span:hover {
+  background-color: #fe4330;
+  color: #fff;
+}
+
+.imgbox {
+  width: 100%;
+  height: 100%;
+  padding: 5px 5px;
+}
+
+.IM2 {
+  padding: 2.3px 5px;
+  height: auto !important;
+}
+
+.TOPPHOTO,
+.DOWNPHOTO {
+  height: 50%;
+  position: relative;
+}
+
+.TOPDIVofsellers {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.leftDiveofSellers h4 {
+  font-size: 3.5rem;
+  text-align: left;
+}
+
+.leftDiveofSellers,
+.rightDivofsellers {
+  width: 100%;
+}
+
+.leftDiveofSellers > span {
+  font-size: 18px;
+  color: #a7a7a7;
+}
+
+.rightDivofsellers .nav > ul > li > a {
+  font-size: 13px;
+  color: #adadad !important;
+  position: relative;
+}
+
+.rightDivofsellers .nav > ul > li > .lastlink {
+  color: #fe4330 !important;
+}
+
+.rightDivofsellers .nav > ul > li > a:hover {
+  color: #191919 !important;
+}
+
+.rightDivofsellers .nav > ul > li > a > span {
+  position: absolute;
+  top: 0px;
+  right: -23px;
+  font-size: 9px;
+  color: #fe4330;
+  margin: 0px 4px;
+}
+
+.DOWNDIVofsellers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.topsellerBox {
+  width: 33.333333333333336%;
+  padding: 0px 5px;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.topsellerBox .top,
+.topsellerBox .down {
+  position: absolute;
+  right: 30px;
+  background-color: #fff;
+  padding: 7px 7px;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: all 0.3s linear;
+  color: #000;
+}
+
+.topsellerBox .top {
+  top: 30px;
+}
+
+.topsellerBox .down {
+  top: 72px;
+}
+
+.topsellerBox .top:hover,
+.topsellerBox .down:hover {
+  background-color: #fe4330;
+  color: #fff;
+}
+
+.imageofTopSeller {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 20px;
+}
+
+.underTheImage {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.LBOFUtheimg {
+  width: 100%;
+  padding-left: 5px;
+  padding-right: 5px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+  flex-wrap: wrap;
+}
+.nameOfProduct {
+  display: inline-block;
+  width: 65%;
+  margin: 0px 0px;
+  text-align: left;
+}
+.priceOfproduct {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  width: calc(100% - 65%);
+  margin: 0px 0px;
+}
+.fristh6 {
+  color: #a7a7a7;
+  display: inline-block;
+  text-transform: capitalize;
+  font-weight: 400;
+  letter-spacing: 1px;
+  font-size: 14px;
+}
+
+.secondh6 {
+  text-transform: uppercase;
+  font-weight: 600;
+  display: inline-block;
+  color: #000;
+  font-size: 14px;
+}
+
+.euronum {
+  width: 100%;
+  font-weight: 600;
+  text-align: right;
+  color: #fe4330;
+  font-size: 15px;
+  margin-bottom: 8px;
+}
+
+.discountPrice {
+  width: 100%;
+  text-align: right;
+  font-weight: 600;
+  color: #979797;
+  text-decoration: line-through;
+  font-size: 15px;
+  margin-bottom: 8px;
+}
+
+.RBOFUtheimg {
+  width: 30%;
+}
+
+.offer {
+  width: 100%;
+  position: relative;
+  height: 518px;
+  background: url(../images/image4.png) 29% 4% no-repeat;
+  background-size: 1390px;
+}
+
+.imgforOffer {
+  width: 100%;
+  height: auto;
+}
+
+.offercontent {
+  position: absolute;
+  width: 50%;
+  text-align: center;
+  top: 25%;
+  right: 61px;
+  padding: 0px 0px;
+}
+
+.fristDiv {
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-bottom: 40px;
+}
+
+.boxOftime {
+  width: 91px;
+  text-align: center;
+  background-color: #fff;
+  height: 91px;
+  border-radius: 50% 50%;
+}
+
+.text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.offer {
+  margin-bottom: 50px;
+}
+
+.boxOftime .timeofOffer {
+  margin-bottom: 0px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.boxOftime .timeofOffer span {
+  text-transform: uppercase;
+  color: #fe4330;
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.textUnderBOXtime {
+  color: #d6d6d6;
+  text-transform: capitalize;
+  font-weight: 300;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.OFFERTEXT {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 43px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.euronum3 {
+  color: #fe4330;
+}
+
+.offerBtn {
+  background-color: #fe4330;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.27058823529411763);
+  letter-spacing: 2px;
+  border-radius: 0px;
+  padding: 10px 11px;
+  margin-right: 10px;
+  text-transform: uppercase;
+}
+
+.trending {
+  margin-bottom: 50px;
+}
+
+.titlediv {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.title {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 3.5rem;
+  text-align: center;
+}
+
+.underthetitle {
+  font-size: 18px;
+  color: #a7a7a7;
+}
+
+.topsellerBox2 {
+  width: 100%;
+  padding: 0px 5px;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.topsellerBox2 .top,
+.topsellerBox2 .down {
+  position: absolute;
+  right: 30px;
+  background-color: #fff;
+  padding: 7px 7px;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: all 0.3s linear;
+  color: #000;
+}
+
+.topsellerBox2 .top {
+  top: 30px;
+}
+
+.topsellerBox2 .down {
+  top: 72px;
+}
+
+.topsellerBox2 .top:hover,
+.topsellerBox2 .down:hover {
+  background-color: #fe4330;
+  color: #fff;
+}
+
+.OC2 .owl-nav button.owl-prev {
+  left: 5%;
+}
+
+.OC2 .owl-nav button.owl-next {
+  right: 5%;
+}
+
+.OC2 .owl-nav button.owl-next,
+.OC2 .owl-nav button.owl-prev {
+  top: 30%;
+}
+
+.OC2 .owl-item:first-child {
+  opacity: 0.2;
+}
+
+.OC2 .item img:hover {
+  opacity: 1;
+}
+
+.subscribe {
+  position: relative;
+  margin-bottom: 80px;
+  background: url("../images/image5.png") 50% 50% no-repeat;
+  background-size: 1390px;
+  height: 500px;
+}
+
+.imgforsubscribe {
+  width: 100%;
+  height: 100%;
+}
+
+.subscribecontent {
+  position: absolute;
+  width: 38%;
+  height: auto;
+  top: 25%;
+  left: 200px;
+  padding: 0px 0px;
+  text-align: left;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.subscribeSPan {
+  font-size: 18px;
+  color: #909090;
+  margin: 0px;
+}
+
+.subscribeTitle {
+  font-size: 46px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-top: 8px;
+  margin-bottom: 20px;
+}
+
+.inputGroup {
+  position: relative;
+  width: 70%;
+  margin-left: 0px;
+}
+
+.inpt {
+  width: 100%;
+  padding: 1.475rem 0.75rem;
+  border-radius: 0px;
+  margin: 0px 0px !important;
+  border: none;
+}
+
+input[type="email"]::-webkit-input-placeholder {
+  text-transform: uppercase;
+}
+
+input[type="email"]::-moz-placeholder {
+  text-transform: uppercase;
+}
+
+input[type="email"]::-ms-input-placeholder {
+  text-transform: uppercase;
+}
+
+input[type="email"]:-ms-input-placeholder {
+  text-transform: uppercase;
+}
+
+input[type="email"]::placeholder {
+  text-transform: uppercase;
+}
+
+.inpt:focus {
+  color: #495057;
+  background-color: #fff;
+  border-color: #fe4330 !important;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(254, 67, 48, 0.25);
+}
+
+.subbtn {
+  text-transform: uppercase;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  border-radius: 0px;
+}
+
+.Fourdivs {
+  margin-bottom: 110px;
+}
+
+.FDcontent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.BOXofFD {
+  text-align: center;
+  width: 22%;
+  padding: 30px 6px;
+  border: 1px solid rgba(179, 179, 179, 0.34901960784313724);
+  transition: all 0.9s ease;
+}
+
+.circleicon {
+  width: 80px;
+  height: 80px;
+  background-color: #222222;
+  border-radius: 50% 50%;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 30px;
+  transition: all 0.5s ease;
+  line-height: 90px;
+}
+
+.toP {
+  color: #a5a5a5;
+  font-size: 17px;
+}
+
+.titleofboXFD {
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 20px;
+  color: #222222;
+  transition: all 0.5s ease;
+}
+
+.BOXofFD:hover {
+  box-shadow: 0 0 34px 4px rgba(254, 67, 48, 0.1803921568627451);
+  border: 1px solid transparent;
+}
+
+.BOXofFD:hover > .circleicon {
+  background-color: #fe4330;
+  box-shadow: 0 0 20px 0.2rem rgba(254, 67, 48, 0.25);
+}
+
+.BOXofFD:hover > .titleofboXFD {
+  color: #fe4330;
+}
+
+.divsOfnewsFeeds {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.BoxFeeds {
+  width: 32.333333333333336%;
+  height: 290px;
+  position: relative;
+}
+
+.newfeeds {
+  padding-bottom: 200px;
+}
+
+.imgofNewfeeds {
+  width: 100%;
+  height: 100%;
+}
+
+.divofinfoFeeds {
+  position: absolute;
+  width: 90%;
+  bottom: -80px;
+  left: 18px;
+  padding: 20px 30px;
+  background-color: #fff;
+  overflow: hidden !important;
+  box-shadow: 0 0 35px -6px rgba(0, 0, 0, 0.18);
+}
+
+.fristSpanforFeeds,
+.secSpanforFeeds {
+  color: #a5a5a5;
+  text-transform: capitalize;
+}
+.textonFeeds,
+.secSpanforFeeds {
+  float: right !important;
+}
+
+.textonFeeds {
+  font-weight: 700;
+  margin-top: 20px;
+  font-size: 20px;
+  text-align: left;
+}
+
+.ABSspanforborder {
+  position: absolute;
+  top: 35px;
+  left: -1px;
+  border-left: 3px solid #fe4330;
+  height: 45px;
+}
+
+.footer {
+  width: 100%;
+  background: url("../images/image6.png") 50% 50% repeat;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.fristDivofNav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 60px;
+  padding-bottom: 100px;
+  border-bottom: 1px solid #999999;
+}
+
+.BoxOfLOGOS {
+  width: 16.666666666666668%;
+  text-align: center;
+}
+
+.ICONonBox {
+  color: #999999 !important;
+}
+
+.seconDivofNav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.boxOfsecondDiv {
+  width: 25%;
+  padding-right: 30px;
+  height: 246px;
+}
+
+.titleHeaderofBoxes {
+  font-weight: 700;
+  color: #000;
+  transition: all 0.3s linear;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+
+.titleHeaderofBoxes span {
+  color: #fe4330;
+}
+
+.PforBoxofSecond {
+  color: #a5a5a5;
+  margin-bottom: 20px;
+}
+
+.SocialMedia {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.SocialMedia ul {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 0px;
+  margin-right: 0px;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.SocialMedia > ul > li {
+  list-style: none;
+  margin: 0px 3px 0px 3px;
+}
+
+.SocialMedia > ul > li > a {
+  font-size: 14px;
+  transition: all 0.6s ease;
+  color: #212529;
+  padding: 10px 10px;
+}
+
+.linkofface {
+  padding: 10px 15px !important;
+}
+
+.SocialMedia > ul > li > a:hover {
+  background-color: #fe4330;
+  color: #fff;
+}
+
+.links {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.linkofLinks {
+  color: #999999;
+  width: 50%;
+  text-align: left;
+  text-transform: capitalize;
+  margin-left: 0px;
+  margin-bottom: 15px;
+  font-weight: 400;
+}
+
+.linkofLinks:hover {
+  color: #fe4330;
+}
+
+.THB {
+  padding-top: 25px;
+  text-transform: uppercase;
+}
+
+.blockLineIcon {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.IL {
+  letter-spacing: 2px;
+}
+
+.lineIcon {
+  margin-right: 10px;
+  vertical-align: middle;
+  color: #fe4330;
+}
+
+.divOflineIcon {
+  display: inline-block;
+}
+
+.leftdivicon {
+  display: inline-block;
+}
+
+.CAPline {
+  text-transform: capitalize;
+}
+
+.iconeLine {
+  color: #999999;
+}
+
+.BOFiconLine {
+  width: 80%;
+  display: inline-flex;
+}
+
+.boxesoFimagesofinstagram {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.BOXINSTA {
+  width: 28.333333%;
+  background-color: #ddd;
+  margin-bottom: 10px;
+}
+
+.imgForfooterbox {
+  width: 100%;
+  height: 100%;
+}
+
+body::-webkit-scrollbar {
+  width: 0.7em;
+  background-color: transparent;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: transparent;
+  display: none;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #fe4330;
+  outline: 1px solid #fe4330;
+  border-radius: 50px;
+}
+
+body::-webkit-scrollbar-track-piece {
+  background-color: transparent;
+}
+
+.nav2 {
+  display: none;
+}
+
+.BUttoogle {
+  display: none;
+}
+
+.btnforTOP {
+  display: none;
+  position: fixed;
+  bottom: 15px;
+  right: 20px;
+  background-color: #fe4330;
+  color: #fff;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  transition: all 0.5s ease;
+  z-index: 999999;
+}
+
+.btnforTOP:hover {
+  background-color: #da4536;
+}
+
+@media (min-width: 300px) and (max-width: 575.98px) {
+  .tocontainNav {
+    display: none;
+    height: 145px;
+  }
+
+  .nav2 {
+    display: flex;
+    margin: 0px auto;
+    text-align: center;
+  }
+
+  .nav2 ul {
+    display: block;
+  }
+
+  .nav2 ul li {
+    float: left;
+    width: 100%;
+  }
+
+  .nav1 ul {
+    /* display: none; */
+  }
+
+  .nav1 {
+    padding: 30px 0px 20px 0px;
+  }
+
+  .dropdown-menu {
+    left: 120px;
+  }
+
+  .nav-link:hover {
+    width: 100px;
+  }
+
+  .BrandAndToggle {
+    margin-left: 0px;
+    width: 60%;
+  }
+
+  .BUttoogle {
+    display: inline-block;
+    margin: 0px 0px 0px 30px;
+    width: 35px;
+    height: 35px;
+    background-color: #212529;
+    color: #fff;
+    text-align: center;
+    line-height: 33px;
+    padding: 0px 0px;
+    border-radius: 0px;
+  }
+
+  .btn.focus,
+  .btn:focus {
+    outline: 0;
+    box-shadow: 0 0 10px 0.2rem rgba(254, 67, 48, 0.28);
+  }
+
+  .BrandLink {
+    margin-left: 20px;
+  }
+
+  .BOXDIV {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .BOXDIV span {
+    bottom: 9px;
+    left: 13px;
+    padding: 8px 8px;
+    font-size: 19px;
+  }
+
+  .categories > .container {
+    width: 100%;
+  }
+
+  .leftDiveofSellers,
+  .rightDivofsellers {
+    width: 100%;
+    text-align: center;
+  }
+
+  .leftDiveofSellers > span {
+    font-size: 17px;
+  }
+
+  .offer {
+    width: 100%;
+    position: relative;
+    background-size: 680px;
+    height: 263px;
+  }
+
+  .offercontent {
+    top: 19%;
+    right: 20px;
+    height: auto;
+    width: 59%;
+  }
+
+  .subscribe {
+    background: url(../images/image5.png) 60% 50% no-repeat;
+    background-size: 750px;
+    height: 290px;
+  }
+
+  .subscribecontent {
+    top: 28%;
+    left: 21px;
+    padding: 0px 0px;
+    width: 90%;
+  }
+
+  .inputGroup {
+    position: relative;
+    width: 100%;
+  }
+
+  .subscribeTitle {
+    font-size: 25px;
+    margin-bottom: 48px;
+  }
+
+  .subscribeSPan {
+    font-size: 15px;
+  }
+
+  .titleofboXFD {
+    font-size: 1.1rem;
+  }
+
+  .toP {
+    font-size: 19px;
+  }
+
+  .linkofLinks {
+    margin-bottom: 10px;
+  }
+
+  .boxOfsecondDiv {
+    padding-right: 26px;
+    width: 100%;
+    height: 220px;
+    padding-left: 26px;
+  }
+
+  .SocialMedia > ul > li {
+    margin: 0px 10px 0px 0px;
+  }
+
+  .fristDiv {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .offer {
+    margin-bottom: 70px;
+  }
+
+  .circleicon {
+    line-height: 90px;
+  }
+
+  .boxOftime {
+    width: 50px;
+    height: 50px;
+  }
+
+  .OFFERTEXT {
+    font-size: 1.5rem;
+  }
+
+  .BOXofFD {
+    width: 97%;
+    margin-bottom: 30px;
+    padding: 30px 14px;
+  }
+
+  .BoxFeeds {
+    width: 98%;
+    margin-bottom: 120px;
+  }
+
+  .topsellerBox {
+    width: 100%;
+  }
+
+  .secondh6 {
+    font-size: 14px;
+  }
+
+  .Fourdivs {
+    margin-bottom: 50px;
+  }
+
+  .newfeeds {
+    padding-bottom: 60px;
+  }
+
+  .CofCategoris {
+    margin-bottom: 37px;
+  }
+
+  .LBOFUtheimg {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .textUnderBOXtime {
+    margin-bottom: 0rem;
+    font-size: 18px;
+  }
+
+  .contentofitem {
+    width: 67%;
+    top: 10%;
+    left: 18%;
+  }
+
+  .nav > ul > li {
+    list-style: none;
+    margin: 0px 12px 0px 4px;
+  }
+
+  .contentofitem > span {
+    font-size: 15px;
+  }
+
+  .contentofitem > h1 {
+    font-size: 17px;
+    margin-bottom: 3px;
+  }
+
+  .BUTNS > button {
+    padding: 13px 6px;
+    font-size: 9px;
+    background-color: rgba(115, 115, 115, 0.38823529411764707);
+    margin-right: 5px;
+  }
+
+  .rightDivofsellers .nav > ul > li > a {
+    font-size: 7px;
+    color: #848484 !important;
+  }
+
+  .boxOftime .timeofOffer {
+    font-size: 17px;
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .fristh6 {
+    width: 80%;
+  }
+
+  .BoxOfLOGOS {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .ICONonBox {
+    font-size: 6em;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .tocontainNav {
+    display: none;
+    height: 58px;
+  }
+
+  .nav2 {
+    display: flex;
+    margin: 0px auto;
+  }
+
+  .nav2 ul {
+    display: block;
+  }
+
+  .nav2 ul li {
+    float: left;
+  }
+
+  .nav1 ul {
+    /* display: none; */
+  }
+
+  .nav1 {
+    padding: 30px 0px 20px 0px;
+  }
+
+  .BrandAndToggle {
+    margin-left: 0px;
+    width: 80%;
+  }
+
+  .BUttoogle {
+    display: inline-block;
+    margin: 0px 0px 0px 30px;
+    width: 35px;
+    height: 35px;
+    background-color: #212529;
+    color: #fff;
+    text-align: center;
+    line-height: 33px;
+    padding: 0px 0px;
+    border-radius: 0px;
+  }
+
+  .btn.focus,
+  .btn:focus {
+    outline: 0;
+    box-shadow: 0 0 10px 0.2rem rgba(254, 67, 48, 0.28);
+  }
+
+  .BrandLink {
+    margin-left: 20px;
+  }
+
+  .BOXDIV {
+    width: 50%;
+    margin-bottom: 20px;
+  }
+
+  .BOXDIV span {
+    bottom: 9px;
+    left: 13px;
+    padding: 8px 8px;
+    font-size: 19px;
+  }
+
+  .categories > .container {
+    width: 90%;
+  }
+
+  .leftDiveofSellers,
+  .rightDivofsellers {
+    width: 100%;
+    text-align: center;
+  }
+
+  .leftDiveofSellers > span {
+    font-size: 17px;
+  }
+
+  .offer {
+    width: 100%;
+    position: relative;
+    background-size: 1080px;
+    height: 428px;
+  }
+
+  .offercontent {
+    top: 33%;
+    right: 40px;
+    height: auto;
+  }
+
+  .subscribe {
+    background: url(../images/image5.png) 60% 50% no-repeat;
+    background-size: 890px;
+    height: 340px;
+  }
+
+  .subscribecontent {
+    top: 33%;
+    left: 50px;
+    padding: 0px 0px;
+    width: 62%;
+  }
+
+  .inputGroup {
+    width: 80%;
+  }
+
+  .subscribeTitle {
+    font-size: 34px;
+  }
+
+  .titleofboXFD {
+    font-size: 1.1rem;
+  }
+
+  .toP {
+    font-size: 19px;
+  }
+
+  .linkofLinks {
+    margin-bottom: 10px;
+  }
+
+  .boxOfsecondDiv {
+    padding-right: 26px;
+    width: 50%;
+  }
+
+  .SocialMedia > ul > li {
+    margin: 0px 10px 0px 0px;
+  }
+
+  .fristDiv {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .offer {
+    margin-bottom: 70px;
+  }
+
+  .circleicon {
+    line-height: 90px;
+  }
+
+  .boxOftime {
+    width: 61px;
+    height: 61px;
+  }
+
+  .OFFERTEXT {
+    font-size: 2rem;
+  }
+
+  .BOXofFD {
+    width: 45%;
+    margin-bottom: 50px;
+  }
+
+  .BoxFeeds {
+    width: 48%;
+    margin-bottom: 120px;
+  }
+
+  .topsellerBox {
+    width: 50%;
+  }
+
+  .secondh6 {
+    font-size: 14px;
+  }
+
+  .Fourdivs {
+    margin-bottom: 50px;
+  }
+
+  .newfeeds {
+    padding-bottom: 90px;
+  }
+
+  .CofCategoris {
+    margin-bottom: 37px;
+  }
+
+  .LBOFUtheimg {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .textUnderBOXtime {
+    margin-bottom: 0rem;
+    font-size: 28px;
+  }
+
+  .fristh6 {
+    width: 80%;
+  }
+
+  .contentofitem {
+    width: 62%;
+    top: 31%;
+  }
+
+  .contentofitem > span {
+    font-size: 19px;
+  }
+
+  .contentofitem > h1 {
+    font-size: 26px;
+    margin-bottom: 3px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .tocontainNav {
+    display: none;
+    height: 58px;
+  }
+
+  .nav2 {
+    display: flex;
+    margin: 0px auto;
+  }
+
+  .nav2 ul {
+    display: block;
+  }
+
+  .nav2 ul li {
+    float: left;
+  }
+
+  .nav1 ul {
+    /* display: none; */
+  }
+
+  .nav1 {
+    padding: 30px 0px 20px 0px;
+  }
+
+  .BrandAndToggle {
+    margin-left: 0px;
+    width: 80%;
+  }
+
+  .BUttoogle {
+    display: inline-block;
+    margin: 0px 0px 0px 30px;
+    width: 35px;
+    height: 35px;
+    background-color: #212529;
+    color: #fff;
+    text-align: center;
+    line-height: 33px;
+    padding: 0px 0px;
+    border-radius: 0px;
+  }
+
+  .btn.focus,
+  .btn:focus {
+    outline: 0;
+    box-shadow: 0 0 10px 0.2rem rgba(254, 67, 48, 0.28);
+  }
+
+  .BrandLink {
+    margin-left: 20px;
+  }
+
+  .BOXDIV span {
+    bottom: 9px;
+    left: 13px;
+    padding: 8px 8px;
+    font-size: 19px;
+  }
+
+  .categories > .container {
+    width: 85%;
+  }
+
+  .leftDiveofSellers,
+  .rightDivofsellers {
+    width: 100%;
+    text-align: center;
+  }
+
+  .leftDiveofSellers > span {
+    font-size: 17px;
+  }
+
+  .offer {
+    width: 100%;
+    position: relative;
+  }
+
+  .offercontent {
+    top: 21%;
+    right: 303px;
+    height: auto;
+  }
+
+  .subscribe {
+    background: url(../images/image5.png) 60% 50% no-repeat;
+  }
+
+  .subscribecontent {
+    top: 33%;
+    left: 50px;
+    padding: 0px 0px;
+    width: 72%;
+  }
+
+  .inputGroup {
+    width: 81%;
+  }
+
+  .titleofboXFD {
+    font-size: 1.1rem;
+  }
+
+  .toP {
+    font-size: 19px;
+  }
+
+  .linkofLinks {
+    margin-bottom: 10px;
+  }
+
+  .boxOfsecondDiv {
+    padding-right: 26px;
+    width: 50%;
+  }
+
+  .SocialMedia > ul > li {
+    margin: 0px 10px 0px 0px;
+  }
+
+  .fristDiv {
+    width: 90%;
+    margin-bottom: 10px;
+  }
+
+  .offer {
+    margin-bottom: 70px;
+    background: url(../images/image4.png) 69% 4% no-repeat;
+  }
+
+  .circleicon {
+    line-height: 90px;
+  }
+
+  .boxOftime {
+    width: 71px;
+    height: 71px;
+  }
+
+  .OFFERTEXT {
+    font-size: 2.5rem;
+  }
+
+  .BOXofFD {
+    width: 45%;
+    margin-bottom: 50px;
+  }
+
+  .BoxFeeds {
+    width: 48%;
+    margin-bottom: 120px;
+  }
+
+  .topsellerBox {
+    width: 50%;
+  }
+
+  .secondh6 {
+    font-size: 14px;
+  }
+
+  .Fourdivs {
+    margin-bottom: 50px;
+  }
+
+  .newfeeds {
+    padding-bottom: 90px;
+  }
+
+  .fristh6 {
+    width: 80%;
+  }
+
+  .contentofitem {
+    width: 62%;
+    top: 31%;
+  }
+
+  .contentofitem > span {
+    font-size: 19px;
+  }
+
+  .contentofitem > h1 {
+    font-size: 26px;
+    margin-bottom: 3px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .BOXDIV span {
+    bottom: 9px;
+    left: 13px;
+    padding: 8px 8px;
+    font-size: 19px;
+  }
+
+  .categories > .container {
+    width: 80%;
+  }
+
+  .leftDiveofSellers > span {
+    font-size: 17px;
+  }
+
+  .offer {
+    width: 100%;
+    position: relative;
+  }
+
+  .offercontent {
+    top: 110px;
+    right: 40px;
+  }
+
+  .subscribecontent {
+    top: 25%;
+    right: 120px;
+    padding: 0px 0px;
+    width: 50%;
+  }
+  .inputGroup {
+    position: relative;
+    width: 84%;
+  }
+  .titleofboXFD {
+    font-size: 1.1rem;
+  }
+
+  .toP {
+    font-size: 19px;
+  }
+
+  .linkofLinks {
+    margin-bottom: 10px;
+  }
+
+  .boxOfsecondDiv {
+    padding-right: 26px;
+  }
+
+  .SocialMedia > ul > li {
+    margin: 0px 10px 0px 0px;
+  }
+
+  .fristDiv {
+    width: 90%;
+  }
+
+  .offer {
+    margin-bottom: 70px;
+  }
+
+  .circleicon {
+    line-height: 90px;
+  }
+
+  .contentofitem {
+    width: 32%;
+    top: 31%;
+  }
+
+  .contentofitem > span {
+    font-size: 29px;
+  }
+
+  .contentofitem > h1 {
+    font-size: 36px;
+    margin-bottom: 3px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .contentofitem {
+    width: 32%;
+    top: 31%;
+  }
+}
